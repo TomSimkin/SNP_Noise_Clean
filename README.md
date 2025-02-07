@@ -25,6 +25,6 @@ System Architecture:
 
 ![image](https://github.com/user-attachments/assets/de88cafc-06a6-4b18-a2f1-5c2594fc7d99)
 
-The project is demonstrated in the image below, comparing Lena (https://en.wikipedia.org/wiki/Lenna#:~:text=Lenna%20(or%20Lena)%20is%20a,1972%20issue%20of%20Playboy%20magazine.):
+The project is demonstrated in the images below, comparing Lena (https://en.wikipedia.org/wiki/Lenna#:~:text=Lenna%20(or%20Lena)%20is%20a,1972%20issue%20of%20Playboy%20magazine.):
 
 ![image](https://github.com/user-attachments/assets/8f165343-d2fe-4d54-b3f4-efbb32cbafd7)
