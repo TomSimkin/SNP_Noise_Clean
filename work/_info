@@ -1,0 +1,320 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Lena Final
+Ebuff1
+Z1 w1738669562
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 14
+R0
+Z5 8D:/Lena Final/buff1.vhd
+Z6 FD:/Lena Final/buff1.vhd
+l0
+L5 1
+V7jCieK1ghJz6iOmGJ8h1C3
+!s100 UIB@;lKCSO9C5S`BooccG3
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1738743198
+!i10b 1
+Z9 !s108 1738743198.000000
+Z10 !s90 -reportprogress|300|-work|work|D:/Lena Final/buff1.vhd|
+Z11 !s107 D:/Lena Final/buff1.vhd|
+!i113 1
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+Z14 DEx4 work 5 buff1 0 22 7jCieK1ghJz6iOmGJ8h1C3
+!i122 14
+l23
+L21 24
+VcZ2^Tf4S<ZI?c[dTT:gEo0
+!s100 JGfDhbA>2dG7<?Ahn?:0;2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Efsm
+R1
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z16 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R3
+R4
+!i122 15
+R0
+Z17 8D:/Lena Final/FSM.vhd
+Z18 FD:/Lena Final/FSM.vhd
+l0
+L8 1
+VNM@kUC>bE>1=cY^;fWGRI2
+!s100 m<F4z8of7_Fm3h_V01T^R0
+R7
+32
+R8
+!i10b 1
+R9
+Z19 !s90 -reportprogress|300|-work|work|D:/Lena Final/FSM.vhd|
+Z20 !s107 D:/Lena Final/FSM.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R15
+R16
+R3
+R4
+Z21 DEx4 work 3 fsm 0 22 NM@kUC>bE>1=cY^;fWGRI2
+!i122 15
+l39
+L27 93
+Vjcl^4nOYg>e_21CgQC8IW0
+!s100 6cI:CnI@kDcUC9Q2^S8ni3
+R7
+32
+R8
+!i10b 1
+R9
+R19
+R20
+!i113 1
+R12
+R13
+Emed
+R1
+R2
+R3
+R4
+!i122 16
+R0
+Z22 8D:/Lena Final/Med.vhd
+Z23 FD:/Lena Final/Med.vhd
+l0
+L5 1
+V=^6VlWhb38>GRINSRGQjD1
+!s100 S<B6>Oiaob@C>]J^7G?Ya0
+R7
+32
+R8
+!i10b 1
+R9
+Z24 !s90 -reportprogress|300|-work|work|D:/Lena Final/Med.vhd|
+Z25 !s107 D:/Lena Final/Med.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+Z26 DEx4 work 3 med 0 22 =^6VlWhb38>GRINSRGQjD1
+!i122 16
+l51
+L16 76
+V@ea52Y;bQ4?MPIh7zod]X2
+!s100 TOE2=S6`?UE<knYIUPFBB3
+R7
+32
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Eram_2048_256
+R1
+Z27 DPx9 altera_mf 20 altera_mf_components 0 22 BN6nPmY:UEbXa[^5b@FTW1
+R3
+R4
+!i122 17
+R0
+Z28 8D:/Lena Final/ram_2048_256.vhd
+Z29 FD:/Lena Final/ram_2048_256.vhd
+l0
+Z30 L43 1
+V`0084^dIRNP;e^N12UY^23
+!s100 SCG1d:Km;6Pl[boe`]T;33
+R7
+32
+R8
+!i10b 1
+R9
+Z31 !s90 -reportprogress|300|-work|work|D:/Lena Final/ram_2048_256.vhd|
+Z32 !s107 D:/Lena Final/ram_2048_256.vhd|
+!i113 1
+R12
+R13
+Asyn
+R27
+R3
+R4
+Z33 DEx4 work 12 ram_2048_256 0 22 `0084^dIRNP;e^N12UY^23
+!i122 17
+l63
+L59 36
+V2A;NVFcRBag<[BFYGN4S=1
+!s100 B[Mh13VE2Db>Ml@L7kImO1
+R7
+32
+R8
+!i10b 1
+R9
+R31
+R32
+!i113 1
+R12
+R13
+Erom_2048_256
+Z34 w1738669563
+R27
+R3
+R4
+!i122 18
+R0
+Z35 8D:/Lena Final/rom_2048_256.vhd
+Z36 FD:/Lena Final/rom_2048_256.vhd
+l0
+R30
+V:FDQZ3h7][=3981[XM6jI3
+!s100 Td874C:>ce`VCIU2jk:[j1
+R7
+32
+R8
+!i10b 1
+R9
+Z37 !s90 -reportprogress|300|-work|work|D:/Lena Final/rom_2048_256.vhd|
+Z38 !s107 D:/Lena Final/rom_2048_256.vhd|
+!i113 1
+R12
+R13
+Asyn
+R27
+R3
+R4
+Z39 DEx4 work 12 rom_2048_256 0 22 :FDQZ3h7][=3981[XM6jI3
+!i122 18
+l60
+L56 33
+VmN^zARS;e>m`0DSziAko<2
+!s100 <MZYk8EIJlUaQ:@haDKRT1
+R7
+32
+R8
+!i10b 1
+R9
+R37
+R38
+!i113 1
+R12
+R13
+Etoplevel
+R34
+R3
+R4
+!i122 19
+R0
+Z40 8D:/Lena Final/toplevel.vhd
+Z41 FD:/Lena Final/toplevel.vhd
+l0
+L4 1
+V;hl:gKUG9IP6H=3liW0ek3
+!s100 ^NY]G8e:kQ3i84W[8K:eU1
+R7
+32
+R8
+!i10b 1
+R9
+Z42 !s90 -reportprogress|300|-work|work|D:/Lena Final/toplevel.vhd|
+Z43 !s107 D:/Lena Final/toplevel.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R33
+R27
+R39
+R26
+R2
+R14
+R15
+R16
+R21
+R3
+R4
+Z44 DEx4 work 8 toplevel 0 22 ;hl:gKUG9IP6H=3liW0ek3
+!i122 19
+l28
+L18 207
+VYgTYi6MW5UGJJ]O34az3m2
+!s100 SegnC2ST6YJZn?oJBa2^T0
+R7
+32
+R8
+!i10b 1
+R9
+R42
+R43
+!i113 1
+R12
+R13
+Etoplevel_tb
+Z45 w1738743193
+R3
+R4
+!i122 20
+R0
+Z46 8D:/Lena Final/TOPLevel_tb.vhd
+Z47 FD:/Lena Final/TOPLevel_tb.vhd
+l0
+L4 1
+V9QjdEfln6W:[Z47EOg`ba0
+!s100 UFTzJPnEW6z1FjkD<jD[j1
+R7
+32
+R8
+!i10b 1
+R9
+Z48 !s90 -reportprogress|300|-work|work|D:/Lena Final/TOPLevel_tb.vhd|
+!s107 D:/Lena Final/TOPLevel_tb.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R44
+R3
+R4
+DEx4 work 11 toplevel_tb 0 22 9QjdEfln6W:[Z47EOg`ba0
+!i122 20
+l22
+L7 64
+VonHJASFK6b2ll`NA>Fc3_2
+!s100 n3c986kCLh`jXGzAdRc>A2
+R7
+32
+R8
+!i10b 1
+R9
+R48
+Z49 !s107 D:/Lena Final/TOPLevel_tb.vhd|
+!i113 1
+R12
+R13
