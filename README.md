@@ -1,30 +1,73 @@
-# SNP_Noise
-Hardware-based image processing system that cleans 5% "salt and pepper" noise.
-Written entirely in VHDL and synthesized using Quartus Prime on Altera DE2-115 Development and Education Board.
+# SNP_Noise_Clean
 
-The project involves designing a hardware-based image processing system that applies a median of medians filter to an image. 
-The system operates using ROM and RAM memory blocks, where the original image is stored in ROM, and the processed image is stored in RAM.
+A hardware-based image processing system that removes 5% salt-and-pepper noise using a median filter, written entirely in VHDL. Designed for and synthesized on the Altera DE2-115 FPGA development board using Quartus Prime.
 
-Memory Setup:
+## 🧠 Project Overview
 
-The input image is stored in ROM.
-The processed image is stored in RAM.
-Memory blocks are configured using MEGA WIZARD and the In System Memory Content Editor.
+This project implements a real-time noise cleaning pipeline using a 3x3 median filter on grayscale images. The architecture uses ROM for image input and RAM for processed image output. The noise cleaning is demonstrated using the standard LENA image with artificially added salt-and-pepper noise.
 
-Image Data Handling:
+## 🛠️ Key Features
 
-A RAW2MIF tool converts the original image into a format that can be loaded into ROM.
-The image data is stored as a 6-bit grayscale representation.
+- ⚙️ Fully implemented in VHDL
+- 🖼️ 6-bit grayscale image support
+- 🧼 Removes 5% salt-and-pepper noise
+- 💾 ROM-based input, RAM-based output
+- 🧮 3x3 median filter implementation
+- 🧪 Verified in ModelSim using testbench with LENA image
+- 🎛️ Target platform: Altera DE2-115 (Cyclone IV)
 
-Simulation and Verification:
+## 🧩 System Architecture
 
-The processing is tested in ModelSim, with verification using known image test cases (e.g., LENA image with 5% salt-and-pepper noise).
-The system reads the processed image from RAM and exports it using MIF2RAW, converting it back to an image format.
+The system processes grayscale images using a hardware pipeline consisting of the following components:
 
-System Architecture:
+ROM: Stores the original (noisy) image. Initialized using a .mif file generated from a grayscale image.
+
+3-Row Buffer: Temporarily holds three consecutive image rows to feed the median filter in a sliding window fashion.
+
+Median Filter: Applies a 3x3 median operation to reduce salt-and-pepper noise at each pixel location.
+
+RAM: Stores the cleaned image after processing.
+
+FSM (Finite State Machine): Coordinates read/write operations and controls data flow between ROM, buffer, filter, and RAM.
 
 ![image](https://github.com/user-attachments/assets/de88cafc-06a6-4b18-a2f1-5c2594fc7d99)
 
-The project is demonstrated in the images below, comparing Lena (https://en.wikipedia.org/wiki/Lenna#:~:text=Lenna%20(or%20Lena)%20is%20a,1972%20issue%20of%20Playboy%20magazine.):
+💡 Each color layer (Red/Green/Blue) is processed separately using this pipeline to support full-color images.
+
+## 🧰 Tools Used
+
+- **VHDL** – for RTL design
+- **ModelSim** – for simulation
+- **Quartus Prime 20.1** – for synthesis
+- **RAW2MIF** – converts image to memory initialization format
+- **MIF2RAW** – converts processed output back to viewable image
+
+## 🖼️ Demonstration
+
+From left to right:
+1. Original clean image
+2. Noisy image (5% noise)
+3. Result from Python median filter (reference)
+4. Result from VHDL simulation
 
 ![image](https://github.com/user-attachments/assets/8f165343-d2fe-4d54-b3f4-efbb32cbafd7)
+
+## 📁 Folder Structure
+├── src/ # VHDL source files
+
+├── sim/ # ModelSim simulation files and testbenches
+
+├── images/ # Original, noisy, and output images
+
+├── tools/ # RAW2MIF and MIF2RAW converters
+
+├── docs/ # System architecture diagrams and explanations
+
+└── README.md
+
+## ✅ How to Run
+
+1. Load your image using the provided `RAW2MIF` converter.
+2. Simulate the design in ModelSim (`testbench.vhd`).
+3. Synthesize the design in Quartus Prime targeting DE2-115.
+4. Use `MIF2RAW` to convert the RAM output to an image file.
