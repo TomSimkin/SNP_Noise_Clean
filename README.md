@@ -52,19 +52,6 @@ From left to right:
 
 ![image](https://github.com/user-attachments/assets/8f165343-d2fe-4d54-b3f4-efbb32cbafd7)
 
-## 📁 Folder Structure
-├── src/ # VHDL source files
-
-├── sim/ # ModelSim simulation files and testbenches
-
-├── images/ # Original, noisy, and output images
-
-├── tools/ # RAW2MIF and MIF2RAW converters
-
-├── docs/ # System architecture diagrams and explanations
-
-└── README.md
-
 ## ✅ How to Run
 
 1. Load your image using the provided `RAW2MIF` converter.
